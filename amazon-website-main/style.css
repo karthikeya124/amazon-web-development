@@ -1,0 +1,210 @@
+
+ /* Reset default spacing and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  height: 60px;
+  background-color: #131921;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-logo .logo {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+/* Address */
+.nav-address {
+  cursor: pointer;
+}
+.add-first {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+.add-second {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Search bar */
+.nav-search {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.search-select {
+  padding: 8px;
+  border: none;
+  background-color: #f3f3f3;
+}
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+}
+.search-icon {
+  background-color: #febd69;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sign-in, Return, Cart */
+.nav-signin, .nav-return, .nav-cart {
+  cursor: pointer;
+  text-align: center;
+}
+.nav-second {
+  font-weight: bold;
+}
+
+/* Panel */
+.panel {
+  height: 40px;
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+.panel-ops p {
+  display: inline;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.panel-deals {
+  margin-left: auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero-section {
+  background-image: url('hero.pic.jpg');
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.hero-msg {
+  background-color: white;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.hero-msg a {
+  color: #007185;
+  text-decoration: none;
+}
+
+/* Shop Section */
+.shop-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #e3e6e6;
+}
+
+/* Individual Box */
+.box {
+  background-color: white;
+  padding: 20px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+.box:hover {
+  transform: scale(1.02);
+}
+.box-img {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 15px 0;
+}
+.box-content h2 {
+  font-size: 1.2rem;
+}
+.box-content p {
+  color: #007185;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-search {
+    flex-direction: column;
+  }
+  .hero-msg {
+    font-size: 0.8rem;
+  }
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ul a {
+    display:block;
+    font-size:0.85rem;
+    margin-top: 10px;
+    color: dddddd;;
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top:0.5px solid white;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.logo {
+    background-image:url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg');
+    background-size: cover;
+    height: 20px;
+    width: 100px;
+    justify-content: center;
+}
